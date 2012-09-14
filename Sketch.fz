@@ -6,7 +6,7 @@
         <view name="pcbView" backgroundColor="#a0a8b3"/>
     </views>
     <instances>
-        <instance moduleIdRef="TwoLayerRectanglePCBModuleID" modelIndex="335" path=":/resources/parts/core/rectangle_pcb_two_layers.fzp">
+        <instance moduleIdRef="TwoLayerRectanglePCBModuleID" modelIndex="939" path=":/resources/parts/core/rectangle_pcb_two_layers.fzp">
             <property name="width" value="100"/>
             <property name="height" value="60"/>
             <title>PCB1</title>
@@ -16,7 +16,7 @@
                 </pcbView>
             </views>
         </instance>
-        <instance moduleIdRef="BreadboardModuleID" modelIndex="337" path="/usr/share/fritzing/parts/core/breadboard.fzp">
+        <instance moduleIdRef="BreadboardModuleID" modelIndex="941" path="/usr/share/fritzing/parts/core/breadboard.fzp">
             <title>Breadboard1</title>
             <views>
                 <breadboardView layer="breadboardbreadboard">
