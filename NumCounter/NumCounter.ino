@@ -1,24 +1,60 @@
 //NumCounter
 //Use the 7 segment display to count a series of numbers
+//Because its a common anode display, HIGH = OFF and LOW = ON.
 //dspinoz@spinoz.com.au
- 
-int pins[] = {2, 3, 4, 5, 6, 7, 8, 9};
 
-void setup() {                
-  // initialize the digital pin as an output.
-  // Pin 13 has an LED connected on most Arduino boards:
-  for (int i = 0; i< 8; i++)
+//PINS for the 7-segment display
+#define pA 2
+#define pB 3
+#define pC 4
+#define pD 5
+#define pE 6
+#define pF 7
+#define pG 8
+#define pDP 9
+
+int p7SegDisplayNum = 8;
+int p7SegDisplay[] = {pA, pB, pC, pD, pE, pF, pG, pDP};
+
+// Pin values for the 7 segment display
+char displayPinVals[][8] = { 
+  //A     B     C     D     E     F     G     DP
+  {LOW , LOW , LOW , LOW , LOW , LOW , HIGH, HIGH}, //0
+  {HIGH, LOW , LOW , HIGH, HIGH, HIGH, HIGH, HIGH}, //1
+  {LOW , LOW , HIGH, LOW , LOW , HIGH, LOW , HIGH}, //2
+  {LOW , LOW , LOW , LOW , HIGH, HIGH, LOW , HIGH}, //3
+  {HIGH, LOW , LOW , HIGH, HIGH, LOW , LOW , HIGH}, //4
+  {LOW , HIGH, LOW , LOW , HIGH, LOW , LOW , HIGH}, //5
+  {LOW , HIGH, LOW , LOW , LOW , LOW , LOW , HIGH}, //6
+  {LOW , LOW , LOW , HIGH, HIGH, HIGH, HIGH, HIGH}, //7
+  {LOW , LOW , LOW , LOW , LOW , LOW , LOW , HIGH}, //8
+  {LOW , LOW , LOW , HIGH, HIGH, LOW , LOW , HIGH}  //9
+};
+
+void setup() {
+  
+  Serial.begin(9600);
+  
+  // 7-segment display initialisation
+  for (int i = 0; i < p7SegDisplayNum; i++)
   {
-    pinMode(pins[i], OUTPUT);
-  }  
+    pinMode(p7SegDisplay[i], OUTPUT);
+    digitalWrite(p7SegDisplay[i], HIGH);
+  }
 }
 
 void loop() {
-  for (int i = 0; i < 8; i++)
+  
+  //Vals from 0 - 9
+  for (int num = 0; num < 10; num++)
   {
-    digitalWrite(pins[i], LOW);   // set the LED on
-    delay(1000);              // wait for a second
-    digitalWrite(pins[i], HIGH);    // set the LED off
-    delay(1000);              // wait for a second
+    //Set values for pins
+    for (int pin = 0; pin < p7SegDisplayNum; pin++)
+    {
+      digitalWrite(p7SegDisplay[pin], displayPinVals[num][pin]);
+    }
+      
+    delay(500);
   }
 }
+
