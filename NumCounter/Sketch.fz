@@ -81,8 +81,10 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0">
-                    <geometry z="6.50002" x="273" y="117"/>
-                    <titleGeometry visible="true" x="420.51" y="110" z="12.5" xOffset="147.51" yOffset="-7" textColor="#ffffff" fontSize="5">
+                    <geometry z="6.50002" x="167" y="18">
+                        <transform m11="0" m12="-1" m13="0" m21="1" m22="0" m23="0" m31="-14.85" m32="162.36" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="314.51" y="11" z="12.5" xOffset="147.51" yOffset="-7" textColor="#ffffff" fontSize="5">
                         <displayKey key=""/>
                     </titleGeometry>
                     <connectors>
@@ -96,6 +98,7 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1105" layer="copper0trace"/>
+                                <connect connectorId="connector0" modelIndex="2512" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector17" layer="copper0">
@@ -114,12 +117,14 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1091" layer="copper0trace"/>
+                                <connect connectorId="connector0" modelIndex="2536" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector11" layer="copper0">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1084" layer="copper0trace"/>
+                                <connect connectorId="connector0" modelIndex="2526" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector12" layer="copper0">
@@ -143,8 +148,8 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematic">
-                    <geometry z="2.50003" x="273" y="155"/>
-                    <titleGeometry visible="true" x="541.65" y="141" z="5.50001" xOffset="268.65" yOffset="-14" textColor="#000000" fontSize="9">
+                    <geometry z="2.50003" x="107" y="142"/>
+                    <titleGeometry visible="true" x="375.65" y="128" z="5.50001" xOffset="268.65" yOffset="-14" textColor="#000000" fontSize="9">
                         <displayKey key=""/>
                         <displayKey key="part number"/>
                     </titleGeometry>
@@ -153,54 +158,63 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1112" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2159" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector8" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1105" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2156" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector17" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector0" modelIndex="1020" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2205" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector9" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1098" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2202" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector10" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1091" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2126" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector11" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1084" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2107" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector12" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1077" layer="schematicTrace"/>
+                                <connect connectorId="connector0" modelIndex="1897" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector13" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector0" modelIndex="1007" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="1893" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector6" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="connector1" modelIndex="1119" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="2086" layer="schematicTrace"/>
                             </connects>
                         </connector>
                     </connectors>
@@ -672,7 +686,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50005" x="399.405" y="120.105" x1="0" y1="0" x2="-268.756" y2="-75.105" wireFlags="64"/>
+                    <geometry z="7.50005" x="158.255" y="52.955" x1="0" y1="0" x2="-27.6057" y2="-7.955" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -690,7 +704,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50004" x="538.83" y="527.757" x1="0" y1="0" x2="-408.181" y2="-482.757" wireFlags="64"/>
+                    <geometry z="4.50004" x="372.83" y="514.757" x1="0" y1="0" x2="-242.181" y2="-469.757" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -731,7 +745,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50006" x="318.405" y="291.105" x1="0" y1="0" x2="-196.756" y2="-111.105" wireFlags="64"/>
+                    <geometry z="7.50006" x="329.255" y="133.955" x1="0" y1="0" x2="-207.606" y2="46.045" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -749,7 +763,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50005" x="354.182" y="157.466" x1="0" y1="0" x2="-232.532" y2="22.5344" wireFlags="64"/>
+                    <geometry z="4.50005" x="188.182" y="144.466" x1="0" y1="0" x2="-66.5325" y2="35.5344" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -772,6 +786,7 @@
             <property name="tolerance" value="±5%"/>
             <property name="resistance" value="220"/>
             <property name="pin spacing" value="400 mil"/>
+            <property name="part number" value=""/>
             <title>R1</title>
             <views>
                 <breadboardView layer="breadboard">
@@ -806,8 +821,8 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0">
-                    <geometry z="6.50007" x="538" y="604"/>
-                    <titleGeometry visible="true" x="580.75" y="597" z="12.5001" xOffset="42.75" yOffset="-7" textColor="#ffffff" fontSize="5">
+                    <geometry z="6.50007" x="87" y="184"/>
+                    <titleGeometry visible="true" x="129.75" y="177" z="12.5001" xOffset="42.75" yOffset="-7" textColor="#ffffff" fontSize="5">
                         <displayKey key=""/>
                     </titleGeometry>
                     <connectors>
@@ -826,8 +841,10 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematic">
-                    <geometry z="2.50006" x="538" y="604"/>
-                    <titleGeometry visible="true" x="553.699" y="568" z="5.50007" xOffset="15.6988" yOffset="-36" textColor="#000000" fontSize="9">
+                    <geometry z="2.50006" x="533" y="105">
+                        <transform m11="-1" m12="0" m13="0" m21="0" m22="-1" m23="0" m31="15.6988" m32="81.4687" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="548.699" y="69" z="5.50007" xOffset="15.6988" yOffset="-36" textColor="#000000" fontSize="9">
                         <displayKey key=""/>
                         <displayKey key="part number"/>
                         <displayKey key="resistance"/>
@@ -839,12 +856,14 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="J11" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector1" modelIndex="1798" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector1" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="Z11" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="1643" layer="schematicTrace"/>
                             </connects>
                         </connector>
                     </connectors>
@@ -873,7 +892,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50008" x="139.649" y="45" x1="0" y1="0" x2="250.756" y2="75.105" wireFlags="64"/>
+                    <geometry z="7.50008" x="139.649" y="45" x1="0" y1="0" x2="18.6057" y2="16.955" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -891,7 +910,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50007" x="139.649" y="45" x1="0" y1="0" x2="399.181" y2="456.213" wireFlags="64"/>
+                    <geometry z="4.50007" x="139.649" y="45" x1="0" y1="0" x2="233.181" y2="443.213" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -932,7 +951,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50009" x="130.649" y="135" x1="0" y1="0" x2="250.756" y2="-14.895" wireFlags="64"/>
+                    <geometry z="7.50009" x="130.649" y="135" x1="0" y1="0" x2="27.6057" y2="-64.045" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -950,7 +969,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50008" x="130.649" y="135" x1="0" y1="0" x2="408.181" y2="339.666" wireFlags="64"/>
+                    <geometry z="4.50008" x="130.649" y="135" x1="0" y1="0" x2="242.181" y2="326.666" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -991,7 +1010,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.5001" x="112.649" y="135" x1="0" y1="0" x2="259.756" y2="-14.895" wireFlags="64"/>
+                    <geometry z="7.5001" x="112.649" y="135" x1="0" y1="0" x2="45.6056" y2="-55.045" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -1009,7 +1028,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50009" x="112.649" y="135" x1="0" y1="0" x2="426.181" y2="313.123" wireFlags="64"/>
+                    <geometry z="4.50009" x="112.649" y="135" x1="0" y1="0" x2="260.181" y2="300.123" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -1050,7 +1069,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50011" x="103.649" y="135" x1="0" y1="0" x2="259.756" y2="-14.895" wireFlags="64"/>
+                    <geometry z="7.50011" x="103.649" y="135" x1="0" y1="0" x2="54.6055" y2="-46.045" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -1068,7 +1087,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.5001" x="103.649" y="135" x1="0" y1="0" x2="435.181" y2="286.576" wireFlags="64"/>
+                    <geometry z="4.5001" x="103.649" y="135" x1="0" y1="0" x2="269.181" y2="273.576" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -1109,7 +1128,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50012" x="112.649" y="45" x1="0" y1="0" x2="241.756" y2="75.105" wireFlags="64"/>
+                    <geometry z="7.50012" x="112.649" y="45" x1="0" y1="0" x2="45.6056" y2="52.955" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -1127,7 +1146,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50011" x="112.649" y="45" x1="0" y1="0" x2="426.181" y2="350.031" wireFlags="64"/>
+                    <geometry z="4.50011" x="112.649" y="45" x1="0" y1="0" x2="260.181" y2="337.031" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -1168,7 +1187,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50013" x="103.649" y="45" x1="0" y1="0" x2="235.456" y2="75.105" wireFlags="64"/>
+                    <geometry z="7.50013" x="103.649" y="45" x1="0" y1="0" x2="54.6055" y2="68.255" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -1186,7 +1205,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50012" x="103.649" y="45" x1="0" y1="0" x2="435.181" y2="323.484" wireFlags="64"/>
+                    <geometry z="4.50012" x="103.649" y="45" x1="0" y1="0" x2="269.181" y2="310.484" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -1227,7 +1246,7 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0trace">
-                    <geometry z="7.50014" x="139.649" y="135" x1="0" y1="0" x2="190.456" y2="-14.895" wireFlags="64"/>
+                    <geometry z="7.50014" x="139.649" y="135" x1="0" y1="0" x2="18.6057" y2="-12.745" wireFlags="64"/>
                     <wireExtras mils="11.1111" color="#404040" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="copper0trace">
@@ -1245,7 +1264,7 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematicTrace">
-                    <geometry z="4.50013" x="139.649" y="135" x1="0" y1="0" x2="399.181" y2="206.939" wireFlags="64"/>
+                    <geometry z="4.50013" x="139.649" y="135" x1="0" y1="0" x2="233.181" y2="193.939" wireFlags="64"/>
                     <wireExtras mils="33.3333" color="#000000" opacity="1"/>
                     <connectors>
                         <connector connectorId="connector0" layer="schematicTrace">
@@ -1333,8 +1352,8 @@
                     </connectors>
                 </breadboardView>
                 <pcbView layer="copper0">
-                    <geometry z="6.50015" x="754" y="526"/>
-                    <titleGeometry visible="true" x="827.8" y="519" z="12.5001" xOffset="73.8" yOffset="-7" textColor="#ffffff" fontSize="5">
+                    <geometry z="6.50015" x="36" y="43"/>
+                    <titleGeometry visible="true" x="109.8" y="36" z="12.5001" xOffset="73.8" yOffset="-7" textColor="#ffffff" fontSize="5">
                         <displayKey key=""/>
                     </titleGeometry>
                     <connectors>
@@ -1343,6 +1362,7 @@
                             <connects>
                                 <connect connectorId="H35" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="H12" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector1" modelIndex="2534" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector4" layer="copper0">
@@ -1376,6 +1396,7 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="C10" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector1" modelIndex="2516" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector9" layer="copper0">
@@ -1394,6 +1415,7 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="H10" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector1" modelIndex="2544" layer="copper0trace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector2" layer="copper0">
@@ -1406,8 +1428,10 @@
                     </connectors>
                 </pcbView>
                 <schematicView layer="schematic">
-                    <geometry z="2.50014" x="754" y="526"/>
-                    <titleGeometry visible="true" x="916.45" y="512" z="5.50014" xOffset="162.45" yOffset="-14" textColor="#000000" fontSize="9">
+                    <geometry z="2.50014" x="457" y="345">
+                        <transform m11="-1" m12="0" m13="0" m21="0" m22="-1" m23="0" m31="162.45" m32="162.45" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="619.45" y="331" z="5.50014" xOffset="162.45" yOffset="-14" textColor="#000000" fontSize="9">
                         <displayKey key=""/>
                         <displayKey key="part number"/>
                     </titleGeometry>
@@ -1417,6 +1441,7 @@
                             <connects>
                                 <connect connectorId="H35" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="H12" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2091" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector4" layer="schematic">
@@ -1424,6 +1449,7 @@
                             <connects>
                                 <connect connectorId="H36" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="H13" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2084" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector5" layer="schematic">
@@ -1431,6 +1457,7 @@
                             <connects>
                                 <connect connectorId="C36" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="C13" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector1" modelIndex="1897" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector6" layer="schematic">
@@ -1438,6 +1465,7 @@
                             <connects>
                                 <connect connectorId="C35" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="C12" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="1893" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector7" layer="schematic">
@@ -1450,24 +1478,28 @@
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="C10" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2154" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector9" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="C9" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2150" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector0" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="H9" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2178" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector1" layer="schematic">
                             <geometry x="0" y="0"/>
                             <connects>
                                 <connect connectorId="H10" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="2112" layer="schematicTrace"/>
                             </connects>
                         </connector>
                         <connector connectorId="connector2" layer="schematic">
@@ -1475,10 +1507,1345 @@
                             <connects>
                                 <connect connectorId="H34" modelIndex="941" layer="breadboardbreadboard"/>
                                 <connect connectorId="H11" modelIndex="941" layer="breadboardbreadboard"/>
+                                <connect connectorId="connector0" modelIndex="1798" layer="schematicTrace"/>
                             </connects>
                         </connector>
                     </connectors>
                 </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="1643" path=":/resources/parts/core/wire.fzp">
+            <title>Wire269</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.5" x="540.713" y="105.936" x1="0" y1="0" x2="-352.713" y2="0.0637503" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="1050" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2205" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="1798" path=":/resources/parts/core/wire.fzp">
+            <title>Wire268</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50001" x="538.225" y="347.753" x1="0" y1="0" x2="2.49252" y2="-162.22" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector2" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="1050" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="1893" path=":/resources/parts/core/wire.fzp">
+            <title>Wire261</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50005" x="458.248" y="426.224" x1="0" y1="0" x2="-85.4181" y2="88.5337" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector6" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector13" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="1897" path=":/resources/parts/core/wire.fzp">
+            <title>Wire260</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50006" x="372.83" y="488.213" x1="0" y1="0" x2="85.4181" y2="-88.5638" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector12" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector5" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2084" path=":/resources/parts/core/wire.fzp">
+            <title>Wire289</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50017" x="616.701" y="399.65" x1="0" y1="0" x2="-0.70125" y2="-69.65" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector4" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2086" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2086" path=":/resources/parts/core/wire.fzp">
+            <title>Wire290</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50017" x="616" y="330" x1="0" y1="0" x2="-243.17" y2="-1.06063" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2084" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector6" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2091" path=":/resources/parts/core/wire.fzp">
+            <title>Wire291</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50019" x="616.701" y="426.224" x1="0" y1="0" x2="23.2987" y2="2.77562" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector3" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2093" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2093" path=":/resources/parts/core/wire.fzp">
+            <title>Wire292</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50019" x="640" y="429" x1="0" y1="0" x2="3" y2="121" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2091" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2104" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2104" path=":/resources/parts/core/wire.fzp">
+            <title>Wire297</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50019" x="643" y="550" x1="0" y1="0" x2="-180" y2="-5" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2093" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2107" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2107" path=":/resources/parts/core/wire.fzp">
+            <title>Wire298</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50019" x="463" y="545" x1="0" y1="0" x2="-90.17" y2="-83.3338" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2104" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector11" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2112" path=":/resources/parts/core/wire.fzp">
+            <title>Wire299</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50021" x="616.701" y="452.799" x1="0" y1="0" x2="9.29875" y2="1.20125" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2120" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2120" path=":/resources/parts/core/wire.fzp">
+            <title>Wire303</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50021" x="626" y="454" x1="0" y1="0" x2="3" y2="86" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2112" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2123" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2123" path=":/resources/parts/core/wire.fzp">
+            <title>Wire304</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50021" x="629" y="540" x1="0" y1="0" x2="-160" y2="-1" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2120" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2126" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2126" path=":/resources/parts/core/wire.fzp">
+            <title>Wire305</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50021" x="469" y="539" x1="0" y1="0" x2="-96.17" y2="-103.878" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2123" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector10" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2150" path=":/resources/parts/core/wire.fzp">
+            <title>Wire313</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50025" x="458.248" y="479.373" x1="0" y1="0" x2="-37.2481" y2="-120.373" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector9" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2159" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2159" path=":/resources/parts/core/wire.fzp">
+            <title>Wire316</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50025" x="421" y="359" x1="0" y1="0" x2="-48.17" y2="-3.51562" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2150" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector7" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2156" path=":/resources/parts/core/wire.fzp">
+            <title>Wire315</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50027" x="446" y="383" x1="0" y1="0" x2="-73.17" y2="-0.969375" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2154" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector8" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2154" path=":/resources/parts/core/wire.fzp">
+            <title>Wire314</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50027" x="458.248" y="452.798" x1="0" y1="0" x2="-12.2481" y2="-69.7981" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector8" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2156" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2178" path=":/resources/parts/core/wire.fzp">
+            <title>Wire319</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50029" x="616.701" y="479.373" x1="0" y1="0" x2="1.29875" y2="48.6275" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="1227" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2199" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2199" path=":/resources/parts/core/wire.fzp">
+            <title>Wire320</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50029" x="618" y="528" x1="0" y1="0" x2="-146" y2="1" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2178" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2202" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2202" path=":/resources/parts/core/wire.fzp">
+            <title>Wire321</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.50029" x="472" y="529" x1="0" y1="0" x2="-99.17" y2="-120.424" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2199" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector9" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2205" path=":/resources/parts/core/wire.fzp">
+            <title>Wire322</title>
+            <views>
+                <schematicView layer="schematicTrace">
+                    <geometry z="4.5" x="188" y="106" x1="0" y1="0" x2="0.181875" y2="38.4656" wireFlags="128"/>
+                    <wireExtras mils="33.3333" color="#000000" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="1643" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector17" modelIndex="942" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2500" path=":/resources/parts/core/wire.fzp">
+            <title>Wire381</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="104.4" y="84.4" x1="0" y1="0" x2="45.05" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector5" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2502" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2502" path=":/resources/parts/core/wire.fzp">
+            <title>Wire382</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="149.45" y="84.4" x1="0" y1="0" x2="0" y2="-21.445" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2500" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2504" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2504" path=":/resources/parts/core/wire.fzp">
+            <title>Wire383</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="149.45" y="62.955" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2502" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector12" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2506" path=":/resources/parts/core/wire.fzp">
+            <title>Wire384</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="155.255" y="53.955" x1="0" y1="0" x2="-45.05" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector13" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2508" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2508" path=":/resources/parts/core/wire.fzp">
+            <title>Wire385</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="110.205" y="53.955" x1="0" y1="0" x2="0" y2="21.445" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2506" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2510" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2510" path=":/resources/parts/core/wire.fzp">
+            <title>Wire386</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="110.205" y="75.4" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2508" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector6" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2512" path=":/resources/parts/core/wire.fzp">
+            <title>Wire387</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50051" x="155.255" y="98.955" x1="0" y1="0" x2="-45.05" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector8" modelIndex="942" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2514" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2514" path=":/resources/parts/core/wire.fzp">
+            <title>Wire388</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50052" x="110.205" y="98.955" x1="0" y1="0" x2="0" y2="-41.555" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2512" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2516" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2516" path=":/resources/parts/core/wire.fzp">
+            <title>Wire389</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50053" x="110.205" y="57.4" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2514" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector8" modelIndex="1227" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2518" path=":/resources/parts/core/wire.fzp">
+            <title>Wire390</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="155.255" y="114.255" x1="0" y1="0" x2="0" y2="-5.805" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector7" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2520" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2520" path=":/resources/parts/core/wire.fzp">
+            <title>Wire391</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5007" x="155.255" y="108.45" x1="0" y1="0" x2="-56.66" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2518" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2522" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2522" path=":/resources/parts/core/wire.fzp">
+            <title>Wire392</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="98.595" y="108.45" x1="0" y1="0" x2="0" y2="-60.05" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2520" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2524" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2524" path=":/resources/parts/core/wire.fzp">
+            <title>Wire393</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="98.595" y="48.4" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2522" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector9" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2526" path=":/resources/parts/core/wire.fzp">
+            <title>Wire394</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50054" x="155.255" y="71.955" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector11" modelIndex="942" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2528" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2528" path=":/resources/parts/core/wire.fzp">
+            <title>Wire395</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50055" x="149.45" y="71.955" x1="0" y1="0" x2="0" y2="-29.36" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2526" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2530" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2530" path=":/resources/parts/core/wire.fzp">
+            <title>Wire396</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50056" x="149.45" y="42.595" x1="0" y1="0" x2="-102.245" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2528" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2532" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2532" path=":/resources/parts/core/wire.fzp">
+            <title>Wire397</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50057" x="47.205" y="42.595" x1="0" y1="0" x2="0" y2="32.805" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2530" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2534" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2534" path=":/resources/parts/core/wire.fzp">
+            <title>Wire398</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50058" x="47.205" y="75.4" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2532" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector3" modelIndex="1227" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2536" path=":/resources/parts/core/wire.fzp">
+            <title>Wire399</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50059" x="155.255" y="80.955" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector10" modelIndex="942" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2538" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2538" path=":/resources/parts/core/wire.fzp">
+            <title>Wire400</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.5006" x="161.06" y="80.955" x1="0" y1="0" x2="0" y2="23.805" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2536" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2540" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2540" path=":/resources/parts/core/wire.fzp">
+            <title>Wire401</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50061" x="161.06" y="104.76" x1="0" y1="0" x2="-125.465" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2538" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2542" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2542" path=":/resources/parts/core/wire.fzp">
+            <title>Wire402</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50062" x="35.595" y="104.76" x1="0" y1="0" x2="0" y2="-47.36" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2540" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2544" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2544" path=":/resources/parts/core/wire.fzp">
+            <title>Wire403</title>
+            <views>
+                <pcbView layer="copper0trace">
+                    <geometry z="7.50063" x="35.595" y="57.4" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#f28a00" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2542" layer="copper0trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="1227" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2546" path=":/resources/parts/core/wire.fzp">
+            <title>Wire404</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="155.255" y="123.255" x1="0" y1="0" x2="-113.855" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector6" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2548" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2548" path=":/resources/parts/core/wire.fzp">
+            <title>Wire405</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="41.4" y="123.255" x1="0" y1="0" x2="0" y2="-38.855" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2546" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector4" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2550" path=":/resources/parts/core/wire.fzp">
+            <title>Wire406</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="155.255" y="89.955" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector9" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2552" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2552" path=":/resources/parts/core/wire.fzp">
+            <title>Wire407</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="161.06" y="89.955" x1="0" y1="0" x2="0" y2="-59.805" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2550" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2554" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2554" path=":/resources/parts/core/wire.fzp">
+            <title>Wire408</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="161.06" y="30.15" x1="0" y1="0" x2="-113.855" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2552" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2556" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2556" path=":/resources/parts/core/wire.fzp">
+            <title>Wire409</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="47.205" y="30.15" x1="0" y1="0" x2="0" y2="18.25" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2554" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2558" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2558" path=":/resources/parts/core/wire.fzp">
+            <title>Wire410</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="47.205" y="48.4" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2556" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2560" path=":/resources/parts/core/wire.fzp">
+            <title>Wire411</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5008" x="90.375" y="187.87" x1="0" y1="0" x2="-54.78" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="1050" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2562" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2562" path=":/resources/parts/core/wire.fzp">
+            <title>Wire412</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5009" x="35.595" y="187.87" x1="0" y1="0" x2="0" y2="-121.47" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2560" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2564" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2564" path=":/resources/parts/core/wire.fzp">
+            <title>Wire413</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5009" x="35.595" y="66.4" x1="0" y1="0" x2="5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2562" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector2" modelIndex="1227" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2566" path=":/resources/parts/core/wire.fzp">
+            <title>Wire414</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5009" x="326.255" y="134.955" x1="0" y1="0" x2="-5.805" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector17" modelIndex="942" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2568" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2568" path=":/resources/parts/core/wire.fzp">
+            <title>Wire415</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5009" x="320.45" y="134.955" x1="0" y1="0" x2="0" y2="52.915" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2566" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="2570" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="2570" path=":/resources/parts/core/wire.fzp">
+            <title>Wire416</title>
+            <views>
+                <pcbView layer="copper1trace">
+                    <geometry z="10.5009" x="320.45" y="187.87" x1="0" y1="0" x2="-194.075" y2="0" wireFlags="36"/>
+                    <wireExtras mils="24" color="#ffcb33" opacity="1"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="2568" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="1050" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
             </views>
         </instance>
     </instances>
