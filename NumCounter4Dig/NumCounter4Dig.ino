@@ -25,8 +25,8 @@ int p7SegDisplayNum = 8;
 int p7SegDisplay[] = {pA, pB, pC, pD, pE, pF, pG, pDP};
 
 // Pin values for the 7 segment display
-char displayPinVals[][8] = { 
-  //A     B     C     D     E     F     G     DP
+char displayPinVals[][8] = {
+  //A B C D E F G DP
   {HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, LOW , LOW }, //0
   {LOW , HIGH, HIGH, LOW , LOW , LOW , LOW , LOW }, //1
   {HIGH, HIGH, LOW , HIGH, HIGH, LOW , HIGH, LOW }, //2
@@ -36,10 +36,26 @@ char displayPinVals[][8] = {
   {HIGH, LOW , HIGH, HIGH, HIGH, HIGH, HIGH, LOW }, //6
   {HIGH, HIGH, HIGH, LOW , LOW , LOW , LOW , LOW }, //7
   {HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, LOW }, //8
-  {HIGH, HIGH, HIGH, LOW , LOW , HIGH, HIGH, LOW }  //9
+  {HIGH, HIGH, HIGH, LOW , LOW , HIGH, HIGH, LOW } //9
 };
 
-void setup() { 
+void displayClear()
+{
+  digitalWrite(pDIG1, HIGH);
+  digitalWrite(pDIG2, HIGH);
+  digitalWrite(pDIG3, HIGH);
+  digitalWrite(pDIG4, HIGH);
+  digitalWrite(pA, LOW);
+  digitalWrite(pB, LOW);
+  digitalWrite(pC, LOW);
+  digitalWrite(pD, LOW);
+  digitalWrite(pE, LOW);
+  digitalWrite(pF, LOW);
+  digitalWrite(pG, LOW);
+  digitalWrite(pDP, LOW); 
+}
+
+void setup() {
   
   pinMode(pDIG1, OUTPUT);
   pinMode(pDIG2, OUTPUT);
@@ -55,76 +71,84 @@ void setup() {
   pinMode(pG, OUTPUT);
   pinMode(pDP, OUTPUT);
   
-  //default - nothing on display
-  digitalWrite(pDIG1, HIGH);
-  digitalWrite(pDIG2, HIGH);
-  digitalWrite(pDIG3, HIGH);
-  digitalWrite(pDIG4, HIGH);
-  digitalWrite(pA, LOW);
-  digitalWrite(pB, LOW);
-  digitalWrite(pC, LOW);
-  digitalWrite(pD, LOW);
-  digitalWrite(pE, LOW);
-  digitalWrite(pF, LOW);
-  digitalWrite(pG, LOW);
-  digitalWrite(pDP, LOW);
+  displayClear();
   
 }
 
-int showDigit = 0;
-
-void loop() 
+void displayNum(int num)
 {
-  if (showDigit >= 4)
+  int dig1 = num % 10;
+  int dig2 = (num / 10) % 10; 
+  int dig3 = (num / 100) % 10;
+  int dig4 = (num / 1000) % 10;
+  
+  displayClear();
+  
+  digitalWrite(pDIG1, HIGH);
+  digitalWrite(pDIG2, HIGH);
+  digitalWrite(pDIG3, HIGH);
+  digitalWrite(pDIG4, LOW);
+    
+  //Set values for pins
+  for (int pin = 0; pin < p7SegDisplayNum; pin++)
   {
-    showDigit=0; 
+    digitalWrite(p7SegDisplay[pin], displayPinVals[dig1][pin]);
+  }
+    
+  displayClear();
+
+  digitalWrite(pDIG1, HIGH);
+  digitalWrite(pDIG2, HIGH);
+  digitalWrite(pDIG3, LOW);
+  digitalWrite(pDIG4, HIGH);
+    
+  //Set values for pins
+  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  {
+    digitalWrite(p7SegDisplay[pin], displayPinVals[dig2][pin]);
+  }
+    
+  displayClear();
+    
+    
+  digitalWrite(pDIG1, HIGH);
+  digitalWrite(pDIG2, LOW);
+  digitalWrite(pDIG3, HIGH);
+  digitalWrite(pDIG4, HIGH);
+    
+  //Set values for pins
+  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  {
+    digitalWrite(p7SegDisplay[pin], displayPinVals[dig3][pin]);
+  }
+    
+  displayClear();
+  
+  digitalWrite(pDIG1, LOW);
+  digitalWrite(pDIG2, HIGH);
+  digitalWrite(pDIG3, HIGH);
+  digitalWrite(pDIG4, HIGH);
+    
+  //Set values for pins
+  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  {
+    digitalWrite(p7SegDisplay[pin], displayPinVals[dig4][pin]);
+  }
+}
+
+int it=0;
+int n=0;
+void loop()
+{
+  displayNum(n);
+  it++;
+  if (it % 5 == 0)
+  {
+    n++; 
   }
   
-  switch (showDigit)
+  if (num > 1000)
   {
-    case 0:
-      digitalWrite(pDIG1, LOW); 
-      digitalWrite(pDIG2, HIGH); 
-      digitalWrite(pDIG3, HIGH);
-      digitalWrite(pDIG4, HIGH); 
-      break;
-    case 1:
-      digitalWrite(pDIG1, HIGH); 
-      digitalWrite(pDIG2, LOW); 
-      digitalWrite(pDIG3, HIGH);
-      digitalWrite(pDIG4, HIGH); 
-      break;
-    case 2:
-      digitalWrite(pDIG1, HIGH); 
-      digitalWrite(pDIG2, HIGH); 
-      digitalWrite(pDIG3, LOW);
-      digitalWrite(pDIG4, HIGH); 
-      break;
-    case 3:
-      digitalWrite(pDIG1, HIGH); 
-      digitalWrite(pDIG2, HIGH); 
-      digitalWrite(pDIG3, HIGH);
-      digitalWrite(pDIG4, LOW); 
-      break;
-    default:
-      digitalWrite(pDIG1, HIGH); 
-      digitalWrite(pDIG2, HIGH); 
-      digitalWrite(pDIG3, HIGH);
-      digitalWrite(pDIG4, HIGH); 
+    num=0; 
   }
-  
-  showDigit++;
-  
-  //Vals from 0 - 9
-  for (int num = 0; num < 10; num++)
-  {
-    //Set values for pins
-    for (int pin = 0; pin < p7SegDisplayNum; pin++)
-    {
-      digitalWrite(p7SegDisplay[pin], displayPinVals[num][pin]);
-    }
-      
-    delay(100);
-  }
-  
 }
