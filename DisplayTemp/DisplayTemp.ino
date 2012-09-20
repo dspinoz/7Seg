@@ -1,7 +1,12 @@
 //DisplayTemp
-//Use a 4 digit 7 segment display to display the temprature 
-//from a thermistor
+//Use a 4 digit 7 segment display and thermister to display temp
 //dspinoz@spinoz.com.au
+
+//PINS for LM35
+#define pLM35 0 //analog
+
+//PINS for LED
+#define pLED 13
 
 //PINS for the 7-segments
 #define pA 2
@@ -53,7 +58,12 @@ void displayClear()
   digitalWrite(pDP, LOW); 
 }
 
-void setup() {
+void setup() 
+{
+  
+  Serial.begin(9600);
+  
+  pinMode(pLED, OUTPUT);
   
   pinMode(pDIG1, OUTPUT);
   pinMode(pDIG2, OUTPUT);
@@ -141,13 +151,23 @@ void displayNum(int num, int sleep)
 }
 
 int n=0;
+int celsius = 0;
 void loop()
 {
-  displayNum(n, 5);
-  n++;
-  
-  if (n > 10000)
+  if (n % 500 == 0)
   {
     n=0; 
+    
+    digitalWrite(pLED, HIGH);
+  
+    int val = analogRead(pLM35);
+  
+    float voltage = float(val * (5.0 / 1024.0));
+    celsius = (voltage * 1000.0) / 10.0;
+  
+    digitalWrite(pLED, LOW);
   }
+  
+  displayNum(celsius, 5);
+  n++;
 }
