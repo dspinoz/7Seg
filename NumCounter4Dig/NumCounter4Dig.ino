@@ -75,13 +75,16 @@ void setup() {
   
 }
 
-void displayNum(int num)
+void displayNum(int num, int sleep)
 {
+  int sleepInc = sleep / 4;
+  
   int dig1 = num % 10;
   int dig2 = (num / 10) % 10; 
   int dig3 = (num / 100) % 10;
   int dig4 = (num / 1000) % 10;
   
+  delay(sleepInc);
   displayClear();
   
   digitalWrite(pDIG1, HIGH);
@@ -95,6 +98,7 @@ void displayNum(int num)
     digitalWrite(p7SegDisplay[pin], displayPinVals[dig1][pin]);
   }
     
+  delay(sleepInc);
   displayClear();
 
   digitalWrite(pDIG1, HIGH);
@@ -108,6 +112,7 @@ void displayNum(int num)
     digitalWrite(p7SegDisplay[pin], displayPinVals[dig2][pin]);
   }
     
+  delay(sleepInc);
   displayClear();
     
     
@@ -122,6 +127,7 @@ void displayNum(int num)
     digitalWrite(p7SegDisplay[pin], displayPinVals[dig3][pin]);
   }
     
+  delay(sleepInc);
   displayClear();
   
   digitalWrite(pDIG1, LOW);
@@ -136,16 +142,11 @@ void displayNum(int num)
   }
 }
 
-int it=0;
 int n=0;
 void loop()
 {
-  displayNum(n);
-  it++;
-  if (it % 5 == 0)
-  {
-    n++; 
-  }
+  displayNum(n, 1000);
+  n++;
   
   if (n > 10000)
   {
