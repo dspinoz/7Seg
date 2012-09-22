@@ -48,6 +48,11 @@ void displayClear()
   digitalWrite(pDIG2, HIGH);
   digitalWrite(pDIG3, HIGH);
   digitalWrite(pDIG4, HIGH);
+  displayDigitNone();
+}
+
+void displayDigitNone()
+{
   digitalWrite(pA, LOW);
   digitalWrite(pB, LOW);
   digitalWrite(pC, LOW);
@@ -92,61 +97,92 @@ void displayNum(int num, int sleep)
   int dig3 = (num / 100) % 10;
   int dig4 = (num / 1000) % 10;
   
-  delay(sleepInc);
-  displayClear();
-  
-  digitalWrite(pDIG1, HIGH);
-  digitalWrite(pDIG2, HIGH);
-  digitalWrite(pDIG3, HIGH);
-  digitalWrite(pDIG4, LOW);
-    
-  //Set values for pins
-  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  if (num > 0)
   {
-    digitalWrite(p7SegDisplay[pin], displayPinVals[dig1][pin]);
-  }
+    displayClear();
     
-  delay(sleepInc);
-  displayClear();
+    digitalWrite(pDIG1, HIGH);
+    digitalWrite(pDIG2, HIGH);
+    digitalWrite(pDIG3, HIGH);
+    digitalWrite(pDIG4, LOW);
+      
+    //Set values for pins
+    for (int pin = 0; pin < p7SegDisplayNum; pin++)
+    {
+      digitalWrite(p7SegDisplay[pin], displayPinVals[dig1][pin]);
+    }
+      
+    delay(sleepInc);
+  }
+  else
+  {
+    displayDigitNone(); 
+  }
+  
+  if (num > 9)
+  {
+    displayClear();
 
-  digitalWrite(pDIG1, HIGH);
-  digitalWrite(pDIG2, HIGH);
-  digitalWrite(pDIG3, LOW);
-  digitalWrite(pDIG4, HIGH);
+    digitalWrite(pDIG1, HIGH);
+    digitalWrite(pDIG2, HIGH);
+    digitalWrite(pDIG3, LOW);
+    digitalWrite(pDIG4, HIGH);
+      
+    //Set values for pins
+    for (int pin = 0; pin < p7SegDisplayNum; pin++)
+    {
+      digitalWrite(p7SegDisplay[pin], displayPinVals[dig2][pin]);
+    }
     
-  //Set values for pins
-  for (int pin = 0; pin < p7SegDisplayNum; pin++)
-  {
-    digitalWrite(p7SegDisplay[pin], displayPinVals[dig2][pin]);
+    delay(sleepInc);
   }
-    
-  delay(sleepInc);
-  displayClear();
-    
-    
-  digitalWrite(pDIG1, HIGH);
-  digitalWrite(pDIG2, LOW);
-  digitalWrite(pDIG3, HIGH);
-  digitalWrite(pDIG4, HIGH);
-    
-  //Set values for pins
-  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  else
   {
-    digitalWrite(p7SegDisplay[pin], displayPinVals[dig3][pin]);
+    displayDigitNone();
   }
-    
-  delay(sleepInc);
-  displayClear();
   
-  digitalWrite(pDIG1, LOW);
-  digitalWrite(pDIG2, HIGH);
-  digitalWrite(pDIG3, HIGH);
-  digitalWrite(pDIG4, HIGH);
-    
-  //Set values for pins
-  for (int pin = 0; pin < p7SegDisplayNum; pin++)
+  if (num > 99)
   {
-    digitalWrite(p7SegDisplay[pin], displayPinVals[dig4][pin]);
+    displayClear();
+      
+    digitalWrite(pDIG1, HIGH);
+    digitalWrite(pDIG2, LOW);
+    digitalWrite(pDIG3, HIGH);
+    digitalWrite(pDIG4, HIGH);
+      
+    //Set values for pins
+    for (int pin = 0; pin < p7SegDisplayNum; pin++)
+    {
+      digitalWrite(p7SegDisplay[pin], displayPinVals[dig3][pin]);
+    }
+    
+    delay(sleepInc);
+  }
+  else
+  {
+    displayDigitNone();
+  }
+  
+  if (num > 999)
+  {
+    displayClear();
+    
+    digitalWrite(pDIG1, LOW);
+    digitalWrite(pDIG2, HIGH);
+    digitalWrite(pDIG3, HIGH);
+    digitalWrite(pDIG4, HIGH);
+      
+    //Set values for pins
+    for (int pin = 0; pin < p7SegDisplayNum; pin++)
+    {
+      digitalWrite(p7SegDisplay[pin], displayPinVals[dig4][pin]);
+    }
+    
+    delay(sleepInc);
+  }
+  else
+  {
+    displayDigitNone();
   }
 }
 
@@ -161,13 +197,17 @@ void loop()
     digitalWrite(pLED, HIGH);
   
     int val = analogRead(pLM35);
-  
-    float voltage = float(val * (5.0 / 1024.0));
-    celsius = (voltage * 1000.0) / 10.0;
+    float voltage = float(val * (5.0 / 1024.0) * 1000);
+    celsius = voltage / 10.0;
+    
+    Serial.print("Temperature: ");
+    Serial.print(celsius);
+    Serial.println(" C");
   
     digitalWrite(pLED, LOW);
   }
   
   displayNum(celsius, 5);
+  
   n++;
 }
