@@ -9,6 +9,7 @@
 #define pY 2 //analog
 #define pZ 3 //analog
 
+#define centerVal 512 
 float increment = 0.0f;
 
 void setup() 
@@ -20,7 +21,7 @@ void setup()
   
   //turn accelerometer on
   digitalWrite(pSleep, HIGH);
-  //do -3g to +3g
+  //do -3g to +3g (default)
   digitalWrite(pSelect, LOW);
   increment = (float)6 / 1024;
   //do -11g to +11g
@@ -36,9 +37,9 @@ void loop()
   int z = analogRead(pZ);
   
   //calculate g value
-  float gX = (x - 512) * increment;
-  float gY = (y - 512) * increment;
-  float gZ = (z - 512) * increment;
+  float gX = (x - centerVal) * increment;
+  float gY = (y - centerVal) * increment;
+  float gZ = (z - centerVal) * increment;
   
   Serial.print("  x=");
   Serial.print(x);
