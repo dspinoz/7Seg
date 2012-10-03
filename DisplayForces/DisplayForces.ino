@@ -5,11 +5,17 @@
 //PINS for MMA7341L
 #define pSleep 2
 #define pSelect 3
-#define pX 1 //analog
-#define pY 2 //analog
-#define pZ 3 //analog
+#define pX A1 //analog
+#define pY A2 //analog
+#define pZ A3 //analog
 
-#define centerVal 512 
+//Analog to Digital conversion
+//analogRead returns 0-1023 for 5V input
+//for 3.3V input, max value is...
+#define ATD3VMAX (3.3 / (5.0 / 1024))
+//center value is
+#define ATD3VMAXCENTER (ATD3VMAX / 2)
+
 float increment = 0.0f;
 
 void setup() 
@@ -21,12 +27,12 @@ void setup()
   
   //turn accelerometer on
   digitalWrite(pSleep, HIGH);
-  //do -3g to +3g (default)
+  //do -3g to +3g
   digitalWrite(pSelect, LOW);
-  increment = (float)6 / 1024;
+  increment = (float)6 / ATD3VMAX;
   //do -11g to +11g
   //digitalWrite(pSelect, HIGH);
-  //increment = (float)22 / 1024;
+  //increment = (float)22 / ATD3VMAX;
   
 }
 
@@ -37,9 +43,9 @@ void loop()
   int z = analogRead(pZ);
   
   //calculate g value
-  float gX = (x - centerVal) * increment;
-  float gY = (y - centerVal) * increment;
-  float gZ = (z - centerVal) * increment;
+  float gX = (x - ATD3VMAXCENTER) * increment;
+  float gY = (y - ATD3VMAXCENTER) * increment;
+  float gZ = (z - ATD3VMAXCENTER) * increment;
   
   Serial.print("  x=");
   Serial.print(x);
@@ -53,4 +59,6 @@ void loop()
   Serial.print(z);
   Serial.print(",");
   Serial.println(gZ, 5); 
+  
+  //delay(200);
 }
