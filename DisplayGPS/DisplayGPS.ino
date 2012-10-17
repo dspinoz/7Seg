@@ -70,7 +70,7 @@ void displayNum(int i)
     
   digitalWrite(latchPin, LOW);
   
-  int num = ~displayPinVals[dig2];
+  int num = ~displayPinVals[dig1];
   for (int j =0; j < 8; j++)
   {
       int val = num >> j;
@@ -80,7 +80,7 @@ void displayNum(int i)
       digitalWrite(clockPin, HIGH);
   }
   
-  num = ~displayPinVals[dig1];
+  num = ~displayPinVals[dig2];
   for (int j =0; j < 8; j++)
   {
       int val = num >> j;
