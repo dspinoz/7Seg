@@ -8,27 +8,70 @@
 
 void setup() 
 {
+  Serial.begin(9600);
   for (size_t i = pStartLED; i <= pEndLED; i++)
   {
     pinMode(i, OUTPUT);
   }  
 }
 
-void loop() 
+void show(size_t num)
 {
   // set the LEDs on
-  for (size_t i = pStartLED; i <= pEndLED; i++)
+  size_t i = 0, j=0;
+  for (i = pStartLED, j=0; i <= pEndLED && j < num; i++, j++)
   {
     digitalWrite(i, HIGH);
-    delay(100);
   }  
   
-  
-  // set the LEDs off
-  for (size_t i = pEndLED; i >= pStartLED; i--)
+  for (; i <= pEndLED; i++)
   {
     digitalWrite(i, LOW);
-    delay(100);
-  }  
+  }   
+}
+
+void ledPerc(size_t p, size_t minp, size_t maxp)
+{
+  if (p < minp)
+  {
+     show(0);
+    return; 
+  }
+  
+  int ledMax = pEndLED - pStartLED;
+  
+  float incr = (float)ledMax / (maxp-minp);
+  
+  int num = (p-minp) * incr;
+  
+  Serial.print(ledMax);
+  Serial.print(" ");
+  Serial.print(p);
+  Serial.print(" ");
+  Serial.print((p-minp));
+  Serial.print(" ");
+  Serial.print(incr);
+  Serial.print("  ");
+  Serial.print(num);
+  Serial.println();
+  
+  show(num);
+  
+}
+
+#define maxval 100
+size_t i = 0;
+
+void loop() 
+{
+  i++;
+  if (i>maxval+30)
+  {
+    i=1;
+  }
+  
+  ledPerc(i, 50, maxval);
+  
+  delay(100);
   
 }
