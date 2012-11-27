@@ -20,15 +20,15 @@ void loop()
   for (size_t i = pStartLED; i <= pEndLED; i++)
   {
     digitalWrite(i, HIGH);
+    delay(100);
   }  
   
-  delay(1000);              // wait for a second
   
   // set the LEDs off
-  for (size_t i = pStartLED; i <= pEndLED; i++)
+  for (size_t i = pEndLED; i >= pStartLED; i--)
   {
     digitalWrite(i, LOW);
+    delay(100);
   }  
   
-  delay(1000);              // wait for a second
 }
